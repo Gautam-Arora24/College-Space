@@ -15,8 +15,7 @@ app.use(express.static("./client/build"));
 
 // DATABASE CONNECTION
 mongoose.connect(
-  process.env.MONGODB_URI ||
-    "mongodb+srv://gautam:6kiuz209MjGa3uvk@cluster0.fgbkk.mongodb.net/CollegeSpace?retryWrites=true&w=majority",
+  process.env.MONGODB_URI || process.env.DATABASE,
   { useNewUrlParser: true, useUnifiedTopology: true },
   function (error) {
     if (error) console.log(error);
