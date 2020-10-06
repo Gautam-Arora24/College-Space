@@ -47,7 +47,7 @@ function App() {
       return null;
     }
     await Axios.post(
-      "http://localhost:8000/college/teacher/announcements",
+      "https://collegespace123.herokuapp.com/college/teacher/announcements",
       {
         announcements: data == "" ? null : data,
       },
@@ -64,7 +64,7 @@ function App() {
 
   async function getAnnouncementDetailsByInputName(value) {
     let response;
-    const url = "http://localhost:8000/college/teacher/details";
+    const url = "https://collegespace123.herokuapp.com/college/teacher/details";
     const data = {
       name: value,
     };

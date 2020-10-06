@@ -51,11 +51,15 @@ export default function Dashboard() {
     formData.append("description", description);
     formData.append("subject", subject);
     formData.append("photo", photo);
-    Axios.post(`http://localhost:8000/college/teacher/addNotes`, formData, {
-      headers: {
-        Authorization: `Bearer ${getTeacher().token}`,
-      },
-    }).then((res) => {
+    Axios.post(
+      `https://collegespace123.herokuapp.com/college/teacher/addNotes`,
+      formData,
+      {
+        headers: {
+          Authorization: `Bearer ${getTeacher().token}`,
+        },
+      }
+    ).then((res) => {
       setValues({
         name: "",
         description: "",
