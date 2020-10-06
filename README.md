@@ -1,6 +1,9 @@
 # College Space
-
-You can find me at **https://collegespace123.herokuapp.com/**
+<p align="center">
+  <a href="https://collegespace123.herokuapp.com/">
+          <img src="https://img.shields.io/website?label=College+Space&style=flat&logo=Heroku&url=https%3A%2F%2Fcollegespace123.herokuapp.com"
+              alt="The app"></a>
+</p>
 
 ![Image of College Space](https://collegespace123.herokuapp.com/static/media/laptop.ff31f6d2.jpg)
 
