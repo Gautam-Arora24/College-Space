@@ -1,7 +1,11 @@
-# College-Space
-A MERN Web App where teachers and students can connect with each other. A one stop destination for students and teachers. Here teachers can share notes with students and can make announcements🧑‍💻.
+# College Space
 
-![Image of College Space](C:\Users\DELL\Downloads\Capture.JPG)
+####*What is College Space?*
+- A MERN Web App where teachers and students can connect with each other. 
+- A one stop destination for students and teachers. 
+- Here teachers can share notes with students and can make announcements🧑‍💻.
 
-Hosted Web App -->
+![Image of College Space](https://collegespace123.herokuapp.com/static/media/laptop.ff31f6d2.jpg)
+
+** Check us out**
 https://collegespace123.herokuapp.com/
