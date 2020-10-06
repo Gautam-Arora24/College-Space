@@ -35,10 +35,10 @@ export default function Info() {
 
   return (
     <Jumbotron className="jumbotron" style={{ textAlign: "center" }}>
-      <h4 style={{ marginBottom: "20px" }}>Enter the keyword</h4>
+      <h4 style={{ marginBottom: "20px" }}>Enter the name of the Teacher</h4>
       <input
         style={{ marginBottom: "20px" }}
-        placeholder="Enter the keyword"
+        placeholder="Enter the name"
         value={value}
         onChange={(e) => setvalue(e.target.value)}
       />

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { useAppState } from "../state";
+import { Button } from "@material-ui/core";
 
 export default function NavigationBar() {
   const history = useHistory();
@@ -45,7 +46,13 @@ export default function NavigationBar() {
                 >
                   Dashboard
                 </Nav.Link>
-                <Button onClick={() => handleLogout()}>Logout</Button>
+                <Button
+                  variant="container"
+                  color="primary"
+                  onClick={() => handleLogout()}
+                >
+                  Logout
+                </Button>
               </React.Fragment>
             ) : (
               <React.Fragment>

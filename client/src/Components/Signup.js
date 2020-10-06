@@ -16,7 +16,7 @@ import { useHistory } from "react-router-dom";
 export default function Signup() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
-  const [name, setname] = useState("hi");
+  const [name, setname] = useState("");
   const [branch, setbranch] = useState("");
   const [errors, seterrors] = useState(null);
   const history = useHistory();

@@ -153,7 +153,7 @@ export default function Dashboard() {
           color="primary"
           onClick={() => handleSubmit()}
         >
-          Primary
+          Add Announcement
         </Button>
       </div>
       <hr />
