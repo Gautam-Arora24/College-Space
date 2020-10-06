@@ -16,7 +16,7 @@ import { useHistory } from "react-router-dom";
 export default function Signup() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
-  const [name, setname] = useState("");
+  const [name, setname] = useState("hi");
   const [branch, setbranch] = useState("");
   const [errors, seterrors] = useState(null);
   const history = useHistory();
@@ -77,7 +77,7 @@ export default function Signup() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign up
+          Sign up here
         </Typography>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
