@@ -29,9 +29,12 @@ export default function Notes() {
       seterrors(["Kindly enter a valid subject"]);
       setfile([]);
     } else {
-      Axios.post("http://localhost:8000/college/teacher/getphoto", {
-        subject: subject,
-      }).then((res) => {
+      Axios.post(
+        "https://collegespace123.herokuapp.com/college/teacher/getphoto",
+        {
+          subject: subject,
+        }
+      ).then((res) => {
         console.log(res);
         setfile(res.data);
         seterrors([]);
