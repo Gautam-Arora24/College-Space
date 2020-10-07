@@ -14,6 +14,7 @@ export default function Info() {
   const [announcements, setannouncements] = useState("");
   const [errors, seterrors] = useState([]);
   const [teachername, setteachername] = useState("");
+  const [time, setTime] = useState("");
   const history = useHistory();
 
   const getDetails = async () => {
@@ -28,6 +29,7 @@ export default function Info() {
       } else {
         setteachername(value);
         setannouncements(array.data.teacher[0].announcements);
+        setTime(array.data.teacher[0].createdAt);
         seterrors([]);
       }
     }
@@ -51,7 +53,7 @@ export default function Info() {
         Get Announcements
       </Button>{" "}
       {announcements && (
-        <Announcements data={announcements} name={teachername} />
+        <Announcements data={announcements} name={teachername} time={time} />
       )}
       {errors &&
         errors.map((item, index) => (
