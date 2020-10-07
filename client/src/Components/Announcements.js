@@ -6,8 +6,9 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import { DateTime } from "luxon";
 
-export default function Announcements({ data, name }) {
+export default function Announcements({ data, name, time }) {
   const { getTeacher, getAnnouncementDetails, addAnnouncement } = useAppState();
   const [value, setvalue] = useState([]);
 
@@ -40,7 +41,9 @@ export default function Announcements({ data, name }) {
           {data &&
             data.map((item, index) => (
               <TableRow key={index}>
-                <TableCell className={classes.color}>21/02/2020</TableCell>
+                <TableCell className={classes.color}>
+                  {DateTime.fromISO(time).toLocaleString()}
+                </TableCell>
                 <TableCell className={classes.color}>{name}</TableCell>
                 <TableCell className={classes.color} align="center">
                   {item}

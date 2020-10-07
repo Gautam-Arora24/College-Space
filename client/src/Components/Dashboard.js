@@ -13,6 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Axios from "axios";
 import { Alert } from "react-bootstrap";
+import { DateTime } from "luxon";
 
 export default function Dashboard() {
   const { getTeacher, getAnnouncementDetails, addAnnouncement } = useAppState();
@@ -125,7 +126,11 @@ export default function Dashboard() {
           {announcements &&
             announcements.map((item, index) => (
               <TableRow key={index}>
-                <TableCell className={classes.font}>21/02/2020</TableCell>
+                <TableCell className={classes.font}>
+                  {DateTime.fromISO(
+                    getTeacher().teacher.createdAt
+                  ).toLocaleString()}
+                </TableCell>
                 <TableCell className={classes.font}>
                   {getTeacher().teacher.name}
                 </TableCell>

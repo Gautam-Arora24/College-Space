@@ -21,7 +21,7 @@ export default function Login() {
   const history = useHistory();
   const handleLogin = () => {
     axios
-      .post(`https://collegespace123.herokuapp.com/college/teacher/signin`, {
+      .post(`http://localhost:8000/college/teacher/signin`, {
         emailID: email,
         password: password,
       })

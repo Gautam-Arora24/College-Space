@@ -24,7 +24,7 @@ export default function Signup() {
   function HandleSignUp() {
     axios({
       method: "post",
-      url: `https://collegespace123.herokuapp.com/college/teacher/signup`,
+      url: `http://localhost:8000/college/teacher/signup`,
       data: {
         emailID: email,
         name: name,
