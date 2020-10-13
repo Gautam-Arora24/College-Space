@@ -36,6 +36,9 @@ export default function Notes() {
         }
       ).then((res) => {
         console.log(res);
+        if (res.data == "") {
+          return seterrors(["Kindly provide a valid subject"]);
+        }
         setfile(res.data);
         seterrors([]);
       });
