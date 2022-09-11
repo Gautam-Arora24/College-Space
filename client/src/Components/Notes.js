@@ -30,7 +30,7 @@ export default function Notes() {
       setfile([]);
     } else {
       Axios.post(
-        "https://collegespace123.herokuapp.com/college/teacher/getphoto",
+        "https://collegespacebackend-production.up.railway.app/college/teacher/getphoto",
         {
           subject: subject,
         }

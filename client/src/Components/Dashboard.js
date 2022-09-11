@@ -52,7 +52,7 @@ export default function Dashboard() {
     formData.append("subject", subject);
     formData.append("photo", photo);
     Axios.post(
-      `https://collegespace123.herokuapp.com/college/teacher/addNotes`,
+      `https://collegespacebackend-production.up.railway.app/college/teacher/addNotes`,
       formData,
       {
         headers: {

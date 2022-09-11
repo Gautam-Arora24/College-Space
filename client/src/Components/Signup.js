@@ -24,7 +24,7 @@ export default function Signup() {
   function HandleSignUp() {
     axios({
       method: "post",
-      url: `https://collegespace123.herokuapp.com/college/teacher/signup`,
+      url: `https://collegespacebackend-production.up.railway.app/college/teacher/signup`,
       data: {
         emailID: email,
         name: name,
